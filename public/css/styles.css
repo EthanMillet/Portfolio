@@ -4,12 +4,13 @@
   --myorange: #ff541a;
   --mygreen: #005e54;
   --mygrey: #15211f;
-  --handdrawn: 'Open Sans', sans-serif;
-  --work: 'Open Sans', sans-serif;
+  --handdrawn: 'Righteous', cursive;
+  --work: 'Roboto Mono', monospace;
 
 
   --eucalyptus: #1c7a60;
   --dustygray: #a09899;
+  --dustygrayOpaque: #a09899b4;
   --pomegranate: #f54f2c;
   --waikawagray: #58698c;
   --darkshades: #15211f;
@@ -201,7 +202,127 @@ header {
     justify-content: center;
     width: 100%;
   }
+
+  .projectsTitle {
+    color: white;
+    margin-top: 4%;
+    font-size: 8vh;
+    font-family: var(--handdrawn);
+  }
   
+  .projectContainer {
+    color: white;
+    margin-top: 5%;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+  }
+
+  .project {    
+    width: 30%;
+    height: 50%;
+    background-color: var(--dustygrayOpaque);
+    margin-top: 5%;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .project:hover {
+    
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+  }
+
+  .project:hover .projectPreview {
+    filter: none;
+  }
+
+  .projectIMG {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 10%;
+  }
+
+  .projectName {
+    font-family: var(--handdrawn);
+    font-size: 2vw;
+    margin-top: 6%;
+  }
+
+  .projectLine {
+    margin-left: 20%;
+    border: 1px solid var(--pomegranate);
+    width: 80%;
+  }
+
+  .projectPreview {
+    filter: grayscale(100%);
+    border-radius: 2rem;
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    height: 80%;
+    width: 100%
+  }
+
+  .EventifyIMG {
+    background-image: url("../assets/notepad-g715443781_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .BinderIMG {
+    background-image: url("../assets/candle-gaa52aafd9_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .SouthernIMG {
+    background-image: url("../assets/sewer.PNG");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
+  .CoCalIMG {
+    background-image: url("../assets/CoCalendar.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .SkyJamIMG {
+    background-image: url("../assets/SkyJam.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .comingsoonIMG {
+    background-image: url("../assets/pexels-sonny-sixteen-14019519.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .skillsTitle {
+    color: white;
+    margin-top: 4%;
+    font-size: 8vh;
+    font-family: var(--handdrawn);
+    margin-top: 10%;
+    margin-bottom: 4%;
+  }
+
   .skillsContainer {
     width: 100%;
     align-items: center;
@@ -210,7 +331,6 @@ header {
     text-align: center;
     display: flex;
     flex-direction: row;
-    margin-top: 5%;
     margin-bottom: 5%;
   }
 
@@ -297,4 +417,26 @@ header {
 
 ::-webkit-scrollbar {
     display: none;
+  }
+
+  @keyframes append-animate {
+    from {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    to {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes append-animate2 {
+    from {
+      transform: scaleX(0);
+      opacity: 0;
+    }
+    to {
+      transform: scaleX(1);
+      opacity: 1;
+    }
   }
