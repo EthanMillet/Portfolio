@@ -1,12 +1,8 @@
 * { padding: 0; margin: 0;}
 
 :root {
-  --myorange: #ff541a;
-  --mygreen: #005e54;
-  --mygrey: #15211f;
   --handdrawn: 'Righteous', cursive;
   --work: 'Roboto Mono', monospace;
-
 
   --eucalyptus: #1c7a60;
   --dustygray: #a09899;
@@ -33,7 +29,6 @@ body{
 
 main {
     width: 100%;
-    height: 250vh;
 }
 
 header {
@@ -46,7 +41,7 @@ header {
 /* Add a black background color to the top navigation */
 .topnav {
     color: white;
-    background-color: var(--mygrey);
+    background-color: var(--darkshades);
     overflow: hidden;
     font-family: var(--handdrawn);
   }
@@ -118,81 +113,6 @@ header {
     justify-content: center;
   }
 
-  #AboutMe {
-    background-image: url("../assets/utah.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    flex-wrap: wrap;
-    margin: 0%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .left {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 5%;
-  }
-
-  .aboutTitleContainer {
-    margin-bottom: 5%;
-    font-size: 10vh;
-  }
-  
-  .aboutTextContainer {
-    filter: drop-shadow(16px 16px 10px black);
-    color: white;
-    background-color: var(--waikawagray);
-
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-
-    height: 20rem;
-    width: 80%;
-    border: 2px solid black;
-    border-radius: 1rem;
-  }
-
-  .right {
-    height: 100%;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    font-size: 4vh;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .infoTextContainer {
-    filter: drop-shadow(16px 16px 10px black);
-    background-color: var(--waikawagray);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    justify-content: space-around;
-    height: 30rem;
-    width: 14rem;
-    border-radius: 1rem;
-    border: 2px solid black;
-  }
-
-
   #ProjectSection {
     display: flex;
     flex-wrap: wrap;
@@ -214,7 +134,7 @@ header {
     color: white;
     margin-top: 5%;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -339,6 +259,35 @@ header {
     height: auto;
   }
 
+#AboutMe {
+    width: 100%;
+    height: 75vh;
+    margin: 0%;
+
+    background-color: #f54f2c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%2315211f' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+    filter: drop-shadow(0px -16px 25px black);
+
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+  }
+
+  #ContactMe {
+    width: 100%;
+    height: 75vh;
+    margin: 0%;
+  }
+
+  footer {
+    background-color: var(--waikawagray);
+  }
+
+
   @media screen and (max-width: 1200px) {
     #topcontent {
       background-color: #1c7a60;
@@ -358,29 +307,57 @@ header {
       align-items: center;
       justify-content: center;
     }
-
-    #AboutMe {
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-
-    .aboutTextContainer {
-      width: 36rem;
-    }
-
-    .infoTextContainer {
+    .projectContainer {
+      color: white;
       margin-top: 5%;
-    }
-
-    .right {
-      width: 50%;
+      width: 100%;
+      height: 170vh;
+      display: flex;
+      flex-wrap: wrap;
       align-items: center;
       align-content: center;
-      justify-content: center;
+      justify-content: space-evenly;
     }
+
+    .project {    
+      width: 45%;
+      height: 30%;
+      background-color: var(--dustygrayOpaque);
+      margin-top: 5%;
+      margin-bottom: 2%;
+      border-radius: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+
+    .projectPreview {
+      filter: grayscale(100%);
+      border-radius: 2rem;
+      border-top-right-radius: 0rem;
+      border-top-left-radius: 0rem;
+      height: 90%;
+      width: 100%
+    }
+
+    .projectName {
+      font-family: var(--handdrawn);
+      font-size: 4vw;
+      margin-top: 6%;
+    }
+
+    .projectsTitle{
+      font-size: 6vh;
+    }
+
+    .skillsTitle {
+      font-size: 6vh;
+    }
+
   }
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -398,10 +375,52 @@ header {
       margin-top: 5%;
     }
 
+    .projectContainer {
+      color: white;
+      margin-top: 5%;
+      width: 100%;
+      height: 270vh;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: space-evenly;
+    }
+
+    .project {    
+      width: 95%;
+      height: 15%;
+      background-color: var(--dustygrayOpaque);
+      margin-top: 5%;
+      margin-bottom: 5%;
+      border-radius: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+
+    .projectName {
+      font-family: var(--handdrawn);
+      font-size: 7vw;
+      margin-top: 6%;
+    }
+
+    .projectsTitle{
+      margin-top: 10%;
+      margin-bottom: 5%;
+      font-size: 4vh;
+    }
+
+    .skillsTitle {
+      margin-top: 10%;
+      font-size: 4vh;
+    }
+
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 650px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
