@@ -77,6 +77,10 @@ header {
     border-radius: 100%;
   }
 
+  .linkimg:hover {
+    filter: brightness(0) saturate(100%) invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);;
+  }
+
   .logoIMG {
     width: 50%;
     height: auto;
@@ -294,10 +298,50 @@ header {
   }
 
   .links {
+    position: absolute;
+    width: 100%;
+    margin-right: 3%;
+    z-index: -10000;
     display: flex;
     flex-direction: row;
-    width: 50%;
-    height: 8rem;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: space-around;
+    flex-direction: column;   
+    align-self: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .socialIMG {
+    width: 5%;
+    height: auto;
+  }
+
+  .socialIMG:hover {
+    filter: brightness(0) saturate(100%) invert(8%) sepia(35%) saturate(427%) hue-rotate(120deg) brightness(99%) contrast(93%);
+  }
+
+  .resumeHolder {
+
+  }
+
+  .resumeText {
+    text-align: center;
+    color: var(--darkshades);
+    font-family: var(--handdrawn);
+    font-size: 3vh;
+    z-index: 1000;
+  }
+
+  .resumeText a {
+    
+    color: var(--darkshades);
+    text-decoration: underline;
+  }
+
+  .resume:hover {
+    color: white
   }
 
   #ContactMe {
