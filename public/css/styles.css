@@ -270,11 +270,34 @@ header {
 
     flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
     
+  }
+
+  .AboutTitle {
+    text-align: center;
+    color: white;
+    font-family: var(--handdrawn);
+    font-size: 5vh;
+    margin-bottom: 1%;
+  }
+
+  .AboutParagraph {
+    color: white;
+    background-color: var(--darkshades);
+    padding: 2%;
+    width: 65%;
+    border-radius: 2rem;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 8rem;
   }
 
   #ContactMe {
@@ -355,6 +378,10 @@ header {
       font-size: 6vh;
     }
 
+    #AboutMe {
+      height: auto;
+    }
+
   }
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 650px) {
@@ -362,17 +389,6 @@ header {
     .topnav a.icon {
       float: right;
       display: block;
-    }
-    #AboutMe {
-      flex-direction: column;
-    }
-
-    .aboutTextContainer {
-      width: 20rem;
-    }
-
-    .infoTextContainer {
-      margin-top: 5%;
     }
 
     .projectContainer {
