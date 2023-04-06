@@ -38,7 +38,7 @@
             <h2 class="projectsTitle">Some Of My Projects:</h2>
 
             <div class="projectContainer">
-                <button id="myBtn" class="project">
+                <button id="Eventify" class="project">
                     <img src="public/assets/svgs/folder.svg" alt="" class="projectIMG">
                     <h2 class="projectName">Eventify</h2>
                     <hr class="projectLine">
@@ -124,13 +124,21 @@
 <!-- Modal content -->
     <div class="modal-content">
         <div class="modal-header">
-        <h2><img src="public/assets/svgs/folder-outline.svg" alt="" class="projectIMG"> Title</h2>
+        <h2 id="modalTitle"><img src="public/assets/svgs/folder-outline.svg" alt="" class="projectIMG">Title</h2>
         <button class="close"><img src="public/assets/svgs/close-solid.svg" alt="" class="closeimg"></button>
         </div>
 
         <div class="modal-body">
-        <p>Some text in the Modal Body</p>
-        <p>Some other text...</p>
+            <div class="imgSlideShow" id="modalIMG">
+            </div>
+            <div class="modalDescription">
+                <p id="modalDescription" class="modalText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam arcu, ullamcorper at libero porta, aliquet luctus lorem. Nam vel scelerisque ligula. Sed aliquet magna quis sem volutpat vestibulum. Etiam aliquet nisi at tortor egestas pulvinar. Curabitur consectetur est erat, in fringilla purus efficitur vehicula. Morbi vel purus id est dignissim luctus. Donec viverra maximus tempus. Aenean tortor nisi, ornare scelerisque porttitor mollis, maximus ac leo. Quisque gravida finibus velit, ac convallis arcu eleifend a. Aenean at erat vel augue placerat ultricies. Praesent bibendum odio eget massa eleifend, et blandit justo lacinia. Integer volutpat commodo magna, quis mattis purus lobortis a. Integer sagittis venenatis tincidunt.</p>
+                <hr class="modalSeperator">
+            <div class="modalLinks">
+                <a href="" class="modalSite" id="modalSiteLink"> See the Depoloyed Site</a>
+                <a href="" class="modalCode" id="modalGitLink"> See the Code</a>
+            </div>
+        </div>
         </div>
     </div>
 </div>
