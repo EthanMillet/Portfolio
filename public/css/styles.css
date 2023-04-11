@@ -722,6 +722,10 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
+  .modal-header {
+    font-size: 3vh;
+  }
+
   .closeimg {
     width: 120%;
     height: 120%;
