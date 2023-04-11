@@ -45,7 +45,7 @@ const modalIMG = document.getElementById("modalIMG");
     modalDescription.innerHTML = this.description;
     modalSiteLink.setAttribute("href", this.siteLink);
     modalGitLink.setAttribute("href", this.gitLink);
-    modalIMG.style.backgroundImage = "url(C:/Users/ethan/prepo/p/Portfolio/public/assets/" + this.img[0] +")"
+    modalIMG.style.backgroundImage = "url(public/assets/" + this.img[0] +")"
   }
 }
 
