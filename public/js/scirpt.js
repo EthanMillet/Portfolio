@@ -69,7 +69,7 @@ const modalIMG = document.getElementById("modalIMG");
   const cocalendarLink = "https://chalcalendar.herokuapp.com/";
   const cocalendarGitLink = "https://github.com/magjoker/repo-title-goes-here";
 
-  const skyjamIMG = ["SkyJam.PNG"];
+  const skyjamIMG = ["SkyJam.png"];
   const skyjamDescription = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nunc nunc, tristique sit amet ultricies a, mattis sed enim. Donec ante mauris, bibendum vitae malesuada quis, dapibus nec dolor. Nunc rutrum, tellus a viverra maximus, sem libero dignissim lorem, vitae ultrices ante libero ut arcu. Ut in lectus dapibus, mollis lacus sit amet, semper lorem. Integer vitae cursus ligula. Nullam eget lorem at dui scelerisque tristique. Suspendisse lobortis, diam eget hendrerit euismod, sapien enim blandit arcu, ac luctus justo nulla placerat sem. Praesent suscipit ipsum sem, ut volutpat nisi facilisis sed. Morbi et dui tincidunt, fermentum eros et, mollis ex. Nam ex nisl, dignissim commodo facilisis in, fringilla luctus enim.";
   const skyjamLink = "https://j3rkstore.github.io/weatheringo/";
   const skyjamGitLink = "https://github.com/J3rkStore/weatheringo";
