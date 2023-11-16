@@ -152,7 +152,6 @@ SpellBinderbtn.onclick = function() {
  };
 
 
-
  skyjamBtn.onclick = function() {
   SkyJam.renderModal();
  };
